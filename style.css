@@ -38,6 +38,14 @@ a{
     padding: 4px 10px;
     border-radius: 5px;
 }
+.underline{
+    color: wheat;
+    height: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #3498db;
+    margin-bottom: 30px;
+}
 /* nav section start */
 nav{
     width: 100%;
@@ -85,7 +93,7 @@ img[alt="hello" ]{
 }
 /* Project section */
 .projects h1, .contacts h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     color: #fff;
@@ -95,6 +103,10 @@ img[alt="hello" ]{
 .main-project{
     justify-content: center;
     /* gap: 10px; */
+}
+.project-heading,.contact-heading{
+    justify-content: center;
+    flex-direction: column;
 }
 .project-list{
     display: grid;
