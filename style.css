@@ -64,6 +64,7 @@ header{
 .main-header{
     color: #fff;
     justify-content: center;
+    gap: 10px;
 }
 .heading{
     font-size: 1.2rem;
@@ -71,12 +72,10 @@ header{
 .left-header{
     width: 50%;
 }
-/* .left-contant{
-    justify-content: flex-start;
-    gap: 0px;
-} */
 .left-header p{
     color: #ffdc5d;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 .right-header{
     width: 50%;
@@ -146,5 +145,11 @@ img[alt="Contact-img"]{
     }
     .main-nav{
         flex-direction: row;
+    }
+    .left-contant h2{
+        font-size: 1rem;
+    }
+    .left-header h1{
+        font-size: 1.2rem;
     }
 }
