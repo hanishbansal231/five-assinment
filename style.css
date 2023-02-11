@@ -54,6 +54,9 @@ nav{
 img[alt="menu-btn" ]{
     width: 25px;
 }
+.btn{
+    display: none;
+}
 /* Header section start */
 header{
     width: 100%;
@@ -123,6 +126,9 @@ img[alt="Contact-img"]{
 }
 /* Media query start */
 @media screen and (max-width:552px) {
+    .btn{
+        display: block;
+    }
     .project-list{
         grid-template-columns: 1fr;
     }
