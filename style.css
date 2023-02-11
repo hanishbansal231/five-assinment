@@ -1,0 +1,144 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ........ */
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.hover-link{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight:200;
+}
+.hover-link:hover{
+    font-size: 1.3rem;
+   text-decoration: underline;
+}
+.active{
+    background-color: #3498db;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+/* nav section start */
+nav{
+    width: 100%;
+    padding: 10px 0;
+}
+.main-nav{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.links{
+    justify-content: flex-end;
+    gap: 30px;
+}
+img[alt="menu-btn" ]{
+    width: 25px;
+}
+/* Header section start */
+header{
+    width: 100%;
+}
+.main-header{
+    color: #fff;
+    justify-content: center;
+}
+.heading{
+    font-size: 1.2rem;
+}
+.left-header{
+    width: 50%;
+}
+/* .left-contant{
+    justify-content: flex-start;
+    gap: 0px;
+} */
+.left-header p{
+    color: #ffdc5d;
+}
+.right-header{
+    width: 50%;
+}
+img[alt="hello" ]{
+    width: 50px;
+}
+/* Project section */
+.projects h1, .contacts h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.main-project{
+    justify-content: center;
+    /* gap: 10px; */
+}
+.project-list{
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap:20px;
+}
+.project-list h3{
+    color: #fff;
+    text-align: center;
+}
+img[alt="project-img"]{
+    width: 250px;
+}
+/* Contact section start */
+.main-contact{
+    justify-content: center;
+}
+.contact-list{
+    justify-content: center;
+    gap: 20px;
+}
+img[alt="Contact-img"]{
+    width: 50px;
+}
+/* Media query start */
+@media screen and (max-width:552px) {
+    .project-list{
+        grid-template-columns: 1fr;
+    }
+    .main-header{
+       flex-direction: column;
+    }
+    .links{
+        display: none;
+    }
+    .left-contant{
+        flex-direction: column;
+    }
+    header{
+        text-align: center;
+    }
+    .main-nav{
+        flex-direction: row;
+    }
+}
